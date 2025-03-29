@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nota">
+    <input type="text" id="nota2">
+    <button onclick="exibeDadoDigitado()">click here freak chicken</button>
+    <script>
+        function exibeDadoDigitado(){
+            var nota = document.getElementById("nota").value;
+            var nota2 = document.getElementById("nota2").value;
+            var resultado = Number(nota) + Number(nota2);
+            var divisao = resultado / 2 ;
+            alert(" " + nota + " + " + nota2 + " = " + resultado + " / " + divisao);
+        }
+</script>
+</body>
+</html>
