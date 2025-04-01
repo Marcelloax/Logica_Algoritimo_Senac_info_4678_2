@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numero">
+    <button onclick="exibeDadoDigitado()">click here freak chicken</button>
+    <script>
+        function exibeDadoDigitado(){
+            var soma = document.getElementById("numero").value;
+            var maisum = 1;
+            var menosum = 1;  
+            var resultado1 = 1 + Number(soma);
+            var resultado2 = Number(soma) - 1;
+            alert(" O Sucessor de " +  soma + " é " + resultado1 + " O antecessor de  " + soma +" é "+ resultado2);
+        }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="preco">
+    <button onclick="mostrardado()">Aperte Aqui</button>
+<script>
+  function mostrardado(){
+    var valor = document.getElementById("preco").value;;
+    var porcentagem = 5;
+    var desconto = valor * porcentagem / 100;
+    var final = valor - desconto;
+
+            alert(" " + final)
+        }
+</script>
+    
+</body>
+</html>

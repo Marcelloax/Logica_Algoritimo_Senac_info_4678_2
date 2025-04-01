@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+    <input type="text" id="numero3">
+    <button onclick="mostrardado()">Aperte Aqui</button>
+<script>
+  function mostrardado(){
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value; 
+    var numero3 = document.getElementById("numero3").value;
+    var resultado =  numero1**2 -4*numero2*numero3;
+            alert("  " + " = " + resultado)
+        }
+</script>
+    
+</body>
+</html>

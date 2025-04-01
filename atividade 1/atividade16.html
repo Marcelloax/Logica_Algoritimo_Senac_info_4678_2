@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="cigarrosdia" placeholder="cigarros">
+    <input type="text" id="anos" placeholder="anos">
+    <button onclick="mostrardado()">Aperte Aqui</button>
+<script>
+        function mostrardado(){
+            var cigarrosdia = document.getElementById("cigarrosdia").value; //6
+            var anos = document.getElementById("anos").value; // 1ano
+            var minvida = 10;
+            var resultado = cigarrosdia * minvida; //60 min por dia
+            var resultado2 = Number(365 * resultado) * Number(anos); //quantidade de minutos nos anos;
+            var resultadofinal = (resultado2 / 60) / 24; //quantidade de horas no ano
+            alert("  " + " = " + resultadofinal)
+        }
+</script>
+</body>
+</html>

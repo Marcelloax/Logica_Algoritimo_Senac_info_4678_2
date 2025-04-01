@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="km">
+    <input type="text" id="dias">
+    <button onclick="mostrardado()">Aperte Aqui</button>
+<script>
+  function mostrardado(){
+    var km = document.getElementById("km").value;
+    var dias = document.getElementById("dias").value;
+    var valor = 90;
+    var preco = 0.20;
+    var resultado = Number(km * preco) + Number(dias * valor);
+            alert("  " + " = " + resultado)
+        }
+</script>
+</body>
+</html>

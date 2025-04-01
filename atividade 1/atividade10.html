@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="altura">
+    <input type="text" id="largura">
+    <button onclick="mostrardado()">Aperte Aqui</button>
+<script>
+  function mostrardado(){
+    var numero1 = document.getElementById("altura").value;
+    var numero2 = document.getElementById("largura").value;
+    var parede = Number(numero1) * Number(numero2);
+    var tinta = 2;
+    var resultado = parede * tinta;
+            alert("  " + parede + " * " + tinta + "  " + " = " + resultado)
+        }
+</script>
+</body>
+</html>
