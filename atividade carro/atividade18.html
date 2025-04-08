@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="AnoNascimento">
+    <button onclick="aptoavotar()">Entrar </button>
+    <script>
+         function aptoavotar(){
+            var AnoNascimento = Number(document.getElementById("AnoNascimento").value)
+            var anoatual = 2025 - AnoNascimento;
+        if(anoatual < 18){
+            alert("Voce NAO esta autorizado a votar ");
+        }
+        else{alert("Parabens voce esta Autorizado a votar");
+
+        }
+    }
+            
+    </script>    
+    
+</body>
+</html>

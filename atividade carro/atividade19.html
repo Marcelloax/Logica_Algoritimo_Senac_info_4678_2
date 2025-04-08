@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Nome">
+    <input type="text" id="Nota1">
+    <input type="text" id="Nota2">
+    <button onclick="aptoavotar()">Entrar </button>
+    <script>
+         function aptoavotar(){
+            var Nome = document.getElementById("Nome").value;
+            var Nota1 = Number(document.getElementById("Nota1").value)
+            var Nota2 = Number(document.getElementById("Nota2").value)
+            var resultado = (Nota1 * Nota2)/7.0;
+        if(resultado < 7.0){
+            alert("Não esta aprovado pois sua nota foi menos que 7.0");
+        }
+        else{alert("Parabens voce esta aprovado");
+
+        }
+    }
+            
+    </script>    
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="velocidadedocarro">
+    <button onclick="verificarVelocidade()">Entrar </button>
+    <script>
+         function verificarVelocidade(){
+            var velocidadedocarro = Number(document.getElementById("velocidadedocarro").value)
+        if(velocidadedocarro > 80){
+            var velocidadeexcedente = velocidadedocarro - 80;
+            var valordamulta = velocidadeexcedente * 5;
+            alert("Você foi multado. Valor à pagar: "+valordamulta);
+        }
+        else{alert("Parabens voce esta dirigindo no limite permitido");
+
+        }
+    }
+            
+    </script>    
+    
+</body>
+</html>
