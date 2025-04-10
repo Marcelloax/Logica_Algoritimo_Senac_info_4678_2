@@ -6,16 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="Nome">
-    <input type="text" id="Nota1">
-    <input type="text" id="Nota2">
-    <button onclick="aptoavotar()">Entrar </button>
+   <br><input type="text" id="Nome">
+    <br><input type="text" id="Nota1">
+    <br><input type="text" id="Nota2">
+    <button onclick="nota()">Entrar </button>
     <script>
-         function aptoavotar(){
+         function nota(){
             var Nome = document.getElementById("Nome").value;
             var Nota1 = Number(document.getElementById("Nota1").value)
             var Nota2 = Number(document.getElementById("Nota2").value)
-            var resultado = (Nota1 * Nota2)/7.0;
+            var resultado = (Nota1 * Nota2)/2;
         if(resultado < 7.0){
             alert("Não esta aprovado pois sua nota foi menos que 7.0");
         }
