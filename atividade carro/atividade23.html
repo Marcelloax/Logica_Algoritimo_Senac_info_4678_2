@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Desconto</title>
+</head>
+<body>
+    <br><input type="text" id="Nome" placeholder="Nome">
+    <br><select id = sexo>
+    <option value="" selected disabled>Selecione o sexo</option>
+    <option value="masculino">MASCULINO</option>
+    <option value="FEMININO">FEMININO</option>
+</select>
+    <br><input type="text" id="preco" placeholder="valor do produto">
+    <button onclick="DESCONTO()">Entrar </button>
+    <script>
+         function DESCONTO(){
+            var Nome = document.getElementById("Nome").value;
+            var sexo = document.getElementById("sexo").value;
+            var preco = parseFloat(document.getElementById("preco").value);
+            var masc = 0.5;
+            var femi = 0.13;
+           
+        if(sexo == "FEMININO"){
+            var Final1 =  preco - (preco * 13 / 100)
+            alert("Sua compra foi de R$" + preco + ", aplicando um desconto de 13% você pagará um total de R$" + Final1)
+        }
+        else if(sexo = "MASCULINO ")
+            var Final2 =  preco - (preco * 5 / 100)
+             alert("Sua compra foi de R$" + preco + ", aplicando um desconto de 5% você pagará um total de R$" + Final2);
+        }
+
+        
+    
+    </script>
+    
+</body>
+</html>

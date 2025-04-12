@@ -6,23 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <br><input type="text" id="ANO">
+    <br><input type="text" id="ALISTAMENTO">
 
-    <button onclick="ANO()">Entrar </button>
+    <button onclick="ALISTAMENTO()">Entrar </button>
     <script>
-         function ANO(){
-            var ANO = document.getElementById("ANO").value;
-        
-        if(ANO %4 == 0){
-        if(ANO %100 != 0)
-        
-        alert("ANO BISSEXTO")
+         function ALISTAMENTO(){
+            var ALISTAMENTO = document.getElementById("ALISTAMENTO").value;
+            var IDADE = 2025 - ALISTAMENTO;
+        if(IDADE > 18){
+            alert("APTO AO SERVIÇO MILITAR")
         }
-        else{if(ANO %100 == 0)
-            if(ANO %400 == 0)
-        
-            
-            alert("ANO");}
+        else{
+            var FINAL =18 - IDADE;
+             alert("NÃO TEM IDADE SUFICIENTE PARA O ALISTAMENTO MILITAR AINDA FALTAM" + "  " + FINAL + " ANOS ");
+        }
 
         
     }

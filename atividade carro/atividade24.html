@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="KM">
+
+    <button onclick="KM()">Entrar </button>
+    <script>
+         function KM(){
+            var KM = document.getElementById("KM").value;
+            var less200 = KM * 0.50;
+            var morethan200 = KM * 0.45;
+      
+        if(KM <= 200) {
+
+			alert("Sua distância percorrida será de " + KM + "km, e o valor a ser pago será de R$" + less200);
+            
+        }
+        else
+        {alert("Sua distância percorrida será de " + KM + "km, e o valor a ser pago será de R$" + morethan200);
+
+        }
+    }
+</script>
+</body>
+</html>
