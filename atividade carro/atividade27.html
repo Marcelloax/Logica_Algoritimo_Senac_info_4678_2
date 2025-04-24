@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="nota1">
+    <br><input type="text" id="nota2">
+
+    <button onclick="prova()">Entrar </button>
+    <script>
+         function prova(){
+            var nota1 = Number(document.getElementById("nota1").value);
+            var nota2 = Number(document.getElementById("nota2").value);
+            var media = (parseFloat(nota1) + parseFloat(nota2))/2;
+      if(media <=4.9)
+      {
+       alert("REPROVADO")
+      }
+      else if (media >= 5.0 && media <= 6.9){
+        alert("RECUPERAÇÃO")
+      }
+      else if (media >=7){
+        alert("APROVADO")
+      }
+
+      
+
+    }
+</script>
+</body>
+</html>

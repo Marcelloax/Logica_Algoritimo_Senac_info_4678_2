@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="nome" placeholder="nome">
+    <br><input type="text" id="salario" placeholder="salario">
+    <br><input type="text" id="anos" placeholder="anos de empresa">
+
+    <button onclick="prova()">Entrar </button>
+    <script>
+         function prova(){
+            var nome = document.getElementById("nome").value;
+            var salario = Number(document.getElementById("salario").value);
+            var anos = Number(document.getElementById("anos").value);
+            var mais = (salario * 0.20) + salario; 
+          if(anos<3){
+            var tres = (salario * 0.03) + salario;
+        alert(nome + " pelo seu trabalho de" + anos +"anos na empresa" + "ira receber um aumento de 3% e seu salario ficara " + tres)}
+          else if (anos == 3 && anos < 10){
+            var ate10 = (salario * 1.125) + salario;
+            alert(nome + " pelo seu trabalho de" + anos +"anos na empresa" + "ira receber um aumento de 12.5% e seu salario ficara " + ate10)}
+        else if (anos >= 10){
+            var mais = (salario * 0.20) + salario;
+            alert(nome + " pelo seu trabalho de" + anos +"anos na empresa" + "ira receber um aumento de 20% e seu salario ficara " + mais)
+        }
+        
+        }
+      
+
+    
+</script>
+</body>
+</html>

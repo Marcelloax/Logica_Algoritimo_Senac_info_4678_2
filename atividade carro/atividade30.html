@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="a">
+    <br><input type="text" id="b">
+    <br><input type="text" id="c">
+
+    <button onclick="KM()">Entrar </button>
+    <script>
+         function KM(){
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var c = Number(document.getElementById("c").value);
+            var valor = a + b;
+            var valor1 = b + c;
+            var valor2 = c + a;
+            
+            if(valor > c && valor1 > a && valor2 > b)
+            {
+                if (a==b && c==a && c==b)
+                {
+                    alert("É TRIANGULO EQUILÁTERO");
+                }
+                else if((a==b && b!=c)||(b==c && c!=a)||(c==a && a!=b))
+                {
+                    alert("É TRIANGULO ISÓSCELES");
+                }
+                else if(a!=b && b!=c && c!=a)
+                {
+                    alert("É TRIANGULO ESCALENO");
+                }
+            }
+            else
+            {
+                alert("NÃO É TRIANGULO")
+            }
+    }              
+            
+    </script>
+</body>
+</html>

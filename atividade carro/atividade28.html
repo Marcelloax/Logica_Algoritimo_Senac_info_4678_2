@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="altura">
+    <br><input type="text" id="comprimento">
+
+    <button onclick="prova()">Entrar </button>
+    <script>
+         function prova(){
+            var altura = Number(document.getElementById("altura").value);
+            var comprimento = Number(document.getElementById("comprimento").value);
+            var classificacao = altura * comprimento;
+      if(classificacao <= 100)
+      {
+       alert("TERRENO POPULAR ")
+      }
+      else if (classificacao >= 100 && classificacao <= 500){
+        alert("TERRENO MASTER ")
+      }
+      else if (classificacao > 500){
+        alert("TERRENO VIP ")
+      }
+
+      
+
+    }
+</script>
+</body>
+</html>
