@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="a">
+
+    <button onclick="KM()">Entrar </button>
+    <script>
+         function KM(){
+            const jokenpo = ["pedra", "papel", "tesoura"]
+            var a = (document.getElementById("a").value).toLowerCase();
+            var random = Math.trunc(Math.random()*3);
+            var maquina = jokenpo[random];
+            if ((a == jokenpo[0] && maquina == jokenpo[1]) || (a == jokenpo[1] && maquina == jokenpo[2]) || (a == jokenpo[2] && maquina == jokenpo[0])){
+                alert("Você perdeu");
+            }else if ((a == jokenpo[0] && maquina == jokenpo[2]) || (a == jokenpo[1] && maquina == jokenpo[0]) || (a == jokenpo[2] && maquina == jokenpo[1])){
+                alert ("Você Ganhou parabens");
+            }else{
+                alert ("empate, mas talvez possa ter escrito algo errado tente novamente");
+            } 
+        
+    }              
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="valorcasa">
+    <br><input type="text" id="salario">
+    <br><input type="text" id="anopagar">
+
+    <button onclick="emprestimo()">Entrar </button>
+    <script>
+         function emprestimo(){
+            var valorcasa = document.getElementById("valorcasa").value;
+            //o valor da casa
+            var salario = document.getElementById("salario").value;
+            //salario do comprador
+            var anopagar = document.getElementById("anopagar").value;
+            //em quantos anos ele vai pagar
+            var trinta = (salario * 30)/100;
+            //30% do salario
+            var mensal = anopagar * 12;
+            //anos em meses
+            var mes = valorpagar/mensal;
+            if (trinta >= mes){
+                alert (" Emprestimo Aprovado"
+                )
+            }
+            else{
+                alert(" Emprestimo Reprovado")
+            }
+
+            
+       
+    }              
+            
+    </script>
+</body>
+</html>

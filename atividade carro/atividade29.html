@@ -16,12 +16,11 @@
             var nome = document.getElementById("nome").value;
             var salario = Number(document.getElementById("salario").value);
             var anos = Number(document.getElementById("anos").value);
-            var mais = (salario * 0.20) + salario; 
           if(anos<3){
             var tres = (salario * 0.03) + salario;
         alert(nome + " pelo seu trabalho de" + anos +"anos na empresa" + "ira receber um aumento de 3% e seu salario ficara " + tres)}
           else if (anos == 3 && anos < 10){
-            var ate10 = (salario * 1.125) + salario;
+            var ate10 = (salario * 0.125) + salario;
             alert(nome + " pelo seu trabalho de" + anos +"anos na empresa" + "ira receber um aumento de 12.5% e seu salario ficara " + ate10)}
         else if (anos >= 10){
             var mais = (salario * 0.20) + salario;
