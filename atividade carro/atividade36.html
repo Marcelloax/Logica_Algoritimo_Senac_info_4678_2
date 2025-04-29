@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="horas" placeholder="horas">
+
+    <button onclick="imc()">Entrar </button>
+    <script>
+         function imc(){
+            var horas = document.getElementById("horas").value;
+            if (horas <= 10){
+                var pontos = (2*horas)
+                var dinheiro = (pontos*0.05)
+                alert("Essas são suas horas de atividade no mês "+horas+" e graças a isso sua pontuação foi "+ pontos+ " e você recebera "+ dinheiro)
+            }else if(horas > 10 && horas < 20){
+                var pontos1 = (5*horas)
+                var dinheiro1 = (pontos1*0.05)
+                alert("Essas são suas horas de atividade no mês "+horas+" e graças a isso sua pontuação foi "+ pontos1+ " e você recebera "+ dinheiro1)
+            }else{
+                var pontos2 = (10*horas)
+                var dinheiro2 = (pontos2*0.05)
+                alert("Essas são suas horas de atividade no mês "+ horas +" e graças a isso sua pontuação foi "+ pontos2+ " e você recebera "+ dinheiro2)
+            }
+        }
+                    
+            
+    </script>
+</body>
+</html>

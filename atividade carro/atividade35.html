@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="km" placeholder="km">
+    <br><input type="text" id="dia" placeholder="dia">
+    <br><select id = carro>
+        <option value="" selected disabled>Selecione o carro</option>
+        <option value="Popular">POPULAR</option>
+        <option value="Luxo">LUXO</option>
+    </select>
+        <button onclick="enter()">Entrar </button>
+    <script>
+         function enter(){
+            var km = document.getElementById("km").value;
+            var dia = document.getElementById("dia").value;
+            var carro = document.getElementById("carro").value;
+            
+            if (carro === "POPULAR"){
+                var valorDosDiasAlugados = (dia * 90).toFixed(2);
+                if (km <= 100){
+                    var k = (km * 0.20).toFixed(2);   
+                    alert("Este é o valor total a pagar "+ valorDosDiasAlugados+" e esse é o valor por km " + k)
+
+                }else{
+                    var k = (km * 0.10).toFixed(2);
+                    alert("Este é o valor total a pagar "+ valorDosDiasAlugados+" e esse é o valor por km " + k)
+                }
+            }else{
+                var valorDosDiasAlugados2 = (dia * 150).toFixed(2);
+                if (km <= 200){
+                    var k = (km * 0.30).toFixed(2);
+                    alert("Este é o valor total a pagar "+ valorDosDiasAlugados2+" e esse é o valor por km " + k);
+                } else{
+                    var k = (km * 0.25).toFixed(2);
+                    alert("Este é o valor total a pagar "+ valorDosDiasAlugados2+" e esse é o valor por km " + k);
+                }
+            }
+         }           
+
+    </script>
+</body>
+</html>
