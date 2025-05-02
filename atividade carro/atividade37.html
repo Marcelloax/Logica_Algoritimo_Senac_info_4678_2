@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="salarioatual" placeholder="salario atual">
+    <br><select id = sexo >
+        <option value="" selected disabled>Selecione o sexo</option>
+        <option value="masculino">MASCULINO</option>
+        <option value="FEMININO">FEMININO</option>
+    </select>
+    <br><input type="text" id="anosempresa" placeholder="anos de empresa">
+ 
+    <button onclick="show()">Entrar </button>
+    <script>
+         function show(){
+            var salario =  Number(document.getElementById("salarioatual").value);
+            var sexo = document.getElementById("sexo").value;
+            var anosempresa = document.getElementById("anosempresa").value;
+            if(sexo == "FEMININO")
+            {
+                if (anosempresa <= 15)
+                {
+                    var final = (salario * 0.05) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final)
+                }   
+                else if (anosempresa > 15 && anosempresa <=20)
+                {
+                    var final1 = (salario * 0.12) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final1)
+                }
+                else 
+                {
+                    var final2 = (salario * 0.23) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final2)
+                }
+            }else{
+                if (anosempresa < 20){
+                    var final3 = (salario * 0.03) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final3)                          
+                }
+                else if (anosempresa >= 20 && anosempresa <=30)
+                {
+                    var final4 = (salario * 0.13) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final4)
+                }else{
+                    var final5 = (salario * 0.25) + salario;
+                    alert("Muito obrigado pelo seu empenho todos esses anos na empresa e graças a isso seu salario saida de " + salario + " para " + final5)
+                }
+            }}
+        
+    </script>
+</body>
+</html>
