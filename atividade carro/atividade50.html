@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>banana</title>
 </head>
 <body>
     <script>
         window.onload = function(){
             var todos = 0;
+            var a = 0
+            var b = 0
             for(var i = 0; i < 20; i ++){
                 var random = Math.trunc(Math.random()*10);
-                var todos = Number(prompt("sorteados"));
-            if (todos == random){
-               
-                alert ("Você acertou mizera")
-            } 
-                else 
-            {
-                alert ("você errou infelizmente, mas tente novamente")
-            }
-        }}
+                 todos = todos + " " + random;
+                 if(random >= 5){
+                     a += 1 
+                 }
+                 if(random%3 == 0){
+                    b +=1
+                }} alert("A quantidade de numeros sorteados foram " + " [ " + todos +" ] " +"e Esta e a quantidade de numeros acima de 5 "+" [ "+ a +" ] " +" e essa a quantidade de numeros divisiveis por 3 "+ " [ " + b + " ] ")}
             
         
     </script>
