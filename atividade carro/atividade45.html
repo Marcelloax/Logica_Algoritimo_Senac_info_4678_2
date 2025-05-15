@@ -11,19 +11,24 @@
             var teste = Number(prompt("valor inicial"));
             var teste1 = Number(prompt("valor final"));
             var teste2 = Number(prompt("incremento"));
-
+                var todos = "";
             if(teste>=teste1)
             {
-                var todos = "";
+
                 for(var i = teste1; i <= teste; i +=teste2){
                     todos = todos +"  "+ i;
                 }
                 todos = todos + " Acabou!";
                 alert(todos);
             }else{
-                console.log(" Acabou!")
+                for(var i = teste; i <= teste1; i +=teste2){
+        todos = todos +"  "+ i;
+            }
+            todos = todos + " Acabou!";
+        alert(todos)
+    }
             }  
-        }
+        
            
     </script>
 </body>

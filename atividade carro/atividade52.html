@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //52) Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final: 
+        // a) Qual é a média de idade do grupo 
+        // b) Quantas pessoas tem mais de 18 anos 
+        // c) Quantas pessoas tem menos de 5 anos 
+        // d) Qual foi a maior idade lida 
+   
+        window.onload = function(){
+            var media =0;
+            var mais18 =0;
+            var menos5 =0;
+            var idadelida =0;
+            for(var i = 0; i < 10; i ++){
+               var idade = Number(prompt("idade"));
+               media = media + idade;
+               if(idade < 18){
+                mais18 += 1;
+               }
+               if(idade < 5){
+                manos5 += 1;
+               }
+               if(idade >= idadelida){
+                idadelida = idade
+               }
+
+            } 
+            media = media /10;
+            console.log("a media de idade do grupo e " + media + " esta sao as quantidades de pessoas maiores de idade " + mais18 + " esta e a quantidade de pessoas com menos de 5 anos de idade "+ menos5 + " e esta e a maior idade do grupo "+ idadelida)
+        }
+            
+        
+    </script>
+</body>
+</html>
