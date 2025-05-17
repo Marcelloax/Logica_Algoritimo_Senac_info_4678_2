@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+     // 53) Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final: 
+     //a) Quantos homens foram cadastrados 
+     //b) Quantas mulheres foram cadastradas 
+     //c) A média de idade do grupo 
+     //d) A média de idade dos homens 
+     //e) Quantas mulheres tem mais de 20 anos 
+          window.onload = function(){
+            var media = 0
+            var cadastro=0;
+            var idademasculina= 0;
+            var mulheres = 0 ;
+            var mulheres1 = 0 ;
+            for(var i = 0; i < 5; i ++){
+               var idade = Number(prompt("dIGITE SUA IDADE"));
+               var sexo = prompt("DIGITE SEU GENDER");
+               media = media + idade;
+           if (sexo == "HOMEM"){ 
+            cadastro += 1
+           }
+           if(sexo == "MULHER"){
+            mulheres += 1
+           }
+           if(sexo == "MULHER" && idade >= 20)
+           mulheres1 += 1
+            } 
+            media = media /5;
+            idademasculina = media/cadastro;
+
+            console.log("Essa é a quantidade de homens cadastrados " + cadastro +" e essa e a quantidade de mulheres " + mulheres +" esta e a media de idade do grupo "+ media +" esta e a media de idade dos homens "+ idademasculina +" e essa e a quantidade de mulheres com mais de 20 anos "+  mulheres)
+        }
+            
+        
+    </script>
+</body>
+</html>
