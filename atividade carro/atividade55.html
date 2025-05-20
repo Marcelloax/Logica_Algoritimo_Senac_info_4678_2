@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+  //55) [DESAFIO] Vamos melhorar o jogo que fizemos no exercício 32.
+  //  A partir de agora, o computador vai sortear um número entre 1 e 10 e o jogador vai ter 4 tentativas para tentar acertar.
+          window.onload = function(){
+            var random = Math.trunc(Math.random()*11);
+
+            for(var i = 0; i < 4; i ++){
+            var valor = Number(prompt("valor"));
+            if (valor == random){
+                alert ("Você acertou mizera")}
+            else {
+                alert ("você errou infelizmente, mas tente novamente")
+            }}}
+            
+        
+    </script>
+</body>
+</html>

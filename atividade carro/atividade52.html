@@ -23,11 +23,11 @@
             for(var i = 0; i < 10; i ++){
                var idade = Number(prompt("idade"));
                media = media + idade;
-               if(idade < 18){
-                mais18 += 1;
+               if(idade > 18){
+                mais18 +=1;
                }
                if(idade < 5){
-                manos5 += 1;
+                menos5 +=1;
                }
                if(idade >= idadelida){
                 idadelida = idade
