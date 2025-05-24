@@ -11,16 +11,27 @@
     <script>
  
           window.onload = function(){
-            var kk = 0
-            for(var i = 0; i < 100000000; i ++){
-                var valor = Number(prompt("valor"));
-                
-                if(valor == 1111)
-                {
-                   
-                    alert(" o programa foi interrompido pois foi digitado um numero chave ")
-                     break
-                }}}
+            // (While version)
+            var kk = 0;
+           var  i =0; 
+           while(i == 0){
+            var valor = Number(prompt("valor"));
+           if(valor != 1111){
+           kk += valor;
+           }else{
+            i = 1;
+           }
+          }}
+          // (For Version)
+          //var kk = 0
+            //for(var i = 0; i < 1; i ++){
+               // var valor = Number(prompt("valor"));
+                //if(valor != 1111)
+                //{
+                  // kk += valor;
+                //i--;
+                    
+                //}}}
             
         
     </script>
