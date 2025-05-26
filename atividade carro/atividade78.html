@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        window.onload = function(){
+             var a= [];
+            for(var i = 0; i < 15; i++){
+           var valor = Number(prompt("Digite um numero"));
+           a.push(valor);
+            }console.log(a);
+            for(var i = 0; i < a.length; i ++){
+                if(a[i] % 10 === 0){
+                    console.log("o numero" + a[i] + " é multiplo de 10 e esta na posição " + i);
+                }
+            }}
+        
+            
+    </script>
+</body>
+</html>

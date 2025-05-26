@@ -10,14 +10,11 @@
     
     <script>
         window.onload = function(){
-             var numeros= [1]
-             soma = 1;
-            for(var i = 0; i < 15; i++){
-           
-            }
-        
-            
-        console.log(numeros);}
+             var numeros= [0,1];
+            for(var i = 2; i < 15; i++){
+                numeros[i] = numeros[i-1] + numeros [i-2];}
+                console.log(numeros);      
+        }
         
             
     </script>
