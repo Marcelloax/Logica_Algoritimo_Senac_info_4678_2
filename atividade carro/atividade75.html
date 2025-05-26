@@ -10,12 +10,20 @@
     
     <script>
         window.onload = function(){
-             var numeros= [0,1];
-            for(var i = 2; i < 15; i++){
-                numeros[i] = numeros[i-1] + numeros [i-2];}
-                console.log(numeros);      
-        }
+             var numeros= [];
+            for(var i = 0; i < 15; i++){
+                if(i < 2)
+                {
+                    numeros[i] = 1
+                }
+                else{
+                    numeros[i] = numeros[i-1] + numeros [i-2];
+
+                }
+            }
+            console.log(numeros);      
         
+    }
             
     </script>
 </body>
