@@ -9,15 +9,18 @@
 <body>
     
     <script>
+        //Populem uma array de 15 posições com numeros aletorios. Depois 
+        //ordene de forma crescente sem utilizar "sort". Somente com logica!
+
         window.onload = function(){
              var vetor= [];
             for(var i = 0; i < 10; i++){
-           var valor = Number(prompt("Digite um numero"));
-           a.push(valor);
-            }console.log(vetor);
+               var valor = Number(prompt("Digite um numero"));
+                vetor.push(valor);}
+                 console.log(vetor);
             for(var i = 0; i < vetor.length; i ++){
                 if(vetor[i] % 2 === 0){
-                    console.log("o numero" + vetor[i] + " é par e esta na posição " + i);
+                console.log("o numero" + vetor[i] + " é par e esta na posição " + i);
                 }
             }}
         
