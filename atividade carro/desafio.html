@@ -11,14 +11,18 @@
     <script>
         window.onload = function(){
              var a= [];
-            for(var i = 0; i < 15; i++){
+            for(var i = 0; i <= 15; i++){
            var valor = Math.floor(Math.random()*100);
-           a[i] = valor;
+           a.push(valor);
             }
         console.log(a);
-            for(var i = 0; i < a.length; i++)
-            {
-                if(i < valor)
+            for(var m = 1; m < a.length; m++)
+            { if(a[m] < a[m-1]){
+                for(var n = m; n > 0; n--){
+                    if(a[n] < a[n-1]){
+                        
+                    }
+                }
                 {
                     
                 }
